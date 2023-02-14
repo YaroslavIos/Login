@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C2C4E509299A4AD9007A1121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E508299A4AD9007A1121 /* AppDelegate.swift */; };
 		C2C4E50B299A4AD9007A1121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E50A299A4AD9007A1121 /* SceneDelegate.swift */; };
-		C2C4E50D299A4AD9007A1121 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E50C299A4AD9007A1121 /* ViewController.swift */; };
+		C2C4E50D299A4AD9007A1121 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E50C299A4AD9007A1121 /* LoginViewController.swift */; };
 		C2C4E510299A4AD9007A1121 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C4E50E299A4AD9007A1121 /* Main.storyboard */; };
 		C2C4E512299A4ADC007A1121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C4E511299A4ADC007A1121 /* Assets.xcassets */; };
 		C2C4E515299A4ADC007A1121 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C4E513299A4ADC007A1121 /* LaunchScreen.storyboard */; };
+		C2FB7306299A9E00000FA350 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FB7305299A9E00000FA350 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2C4E505299A4AD9007A1121 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C4E508299A4AD9007A1121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2C4E50A299A4AD9007A1121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2C4E50C299A4AD9007A1121 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2C4E50C299A4AD9007A1121 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C2C4E50F299A4AD9007A1121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2C4E511299A4ADC007A1121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2C4E514299A4ADC007A1121 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2C4E516299A4ADC007A1121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2FB7305299A9E00000FA350 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C2C4E508299A4AD9007A1121 /* AppDelegate.swift */,
 				C2C4E50A299A4AD9007A1121 /* SceneDelegate.swift */,
-				C2C4E50C299A4AD9007A1121 /* ViewController.swift */,
+				C2C4E50C299A4AD9007A1121 /* LoginViewController.swift */,
+				C2FB7305299A9E00000FA350 /* WelcomeViewController.swift */,
 				C2C4E50E299A4AD9007A1121 /* Main.storyboard */,
 				C2C4E511299A4ADC007A1121 /* Assets.xcassets */,
 				C2C4E513299A4ADC007A1121 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C4E50D299A4AD9007A1121 /* ViewController.swift in Sources */,
+				C2C4E50D299A4AD9007A1121 /* LoginViewController.swift in Sources */,
 				C2C4E509299A4AD9007A1121 /* AppDelegate.swift in Sources */,
 				C2C4E50B299A4AD9007A1121 /* SceneDelegate.swift in Sources */,
+				C2FB7306299A9E00000FA350 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +307,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +334,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
