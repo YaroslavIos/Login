@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
     @IBOutlet var userNameField: UITextField!
     @IBOutlet var passwordField: UITextField!
@@ -21,24 +21,28 @@ class LoginViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super .touchesBegan(touches, with: event)
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
 //    MARK: - Setting login button
     
     @IBAction func logInButtonTapped() {
-        if userNameField.text == userName && passwordField.text == password {
-            
-        } else {
-            showAlertWindow(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
-        }
-    }
+        guard userNameField.text == userName && passwordField.text == password else {
+        showAlertWindow(
+            withTitle: "Invalid login or password",
+            andMessage: "Please, enter correct login and password"
+        )
+            return
+     }
+}
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.userNameField.text = ""
-        loginVC.passwordField.text = ""
+        // guard let loginVC = segue.destination as? LoginViewController else { return }
+        //loginVC.
+        userNameField.text = ""
+        //loginVC.
+        passwordField.text = ""
     }
     
 //    MARK: - Setting AlertWindowButton
