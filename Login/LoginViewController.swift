@@ -22,14 +22,14 @@ class LoginViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
 //    MARK: - Setting login button
     
     @IBAction func logInButtonTapped() {
         if userNameField.text == userName && passwordField.text == password {
-            print("Succeed")
+            
         } else {
             showAlertWindow(withTitle: "Invalid login or password", andMessage: "Please, enter correct login and password")
         }
@@ -45,11 +45,9 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotUserNameButtonTapped() {
         showAlertWindow(withTitle: "Oops!", andMessage: "Your User Name is Developer😉")
-        return
     }
     @IBAction func forgotPasswordButtonTapped() {
         showAlertWindow(withTitle: "Oops!", andMessage: "Your password is 123456😉")
-        return
     }
 }
 
