@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C274889E299FD09C00187D82 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274889D299FD09C00187D82 /* InfoViewController.swift */; };
+		C27488A0299FD0DE00187D82 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C274889F299FD0DE00187D82 /* HobbyViewController.swift */; };
 		C2C4E509299A4AD9007A1121 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E508299A4AD9007A1121 /* AppDelegate.swift */; };
 		C2C4E50B299A4AD9007A1121 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E50A299A4AD9007A1121 /* SceneDelegate.swift */; };
 		C2C4E50D299A4AD9007A1121 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4E50C299A4AD9007A1121 /* LoginViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C274889D299FD09C00187D82 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		C274889F299FD0DE00187D82 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		C2C4E505299A4AD9007A1121 /* Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C4E508299A4AD9007A1121 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2C4E50A299A4AD9007A1121 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,10 +68,12 @@
 				C2C4E50A299A4AD9007A1121 /* SceneDelegate.swift */,
 				C2C4E50C299A4AD9007A1121 /* LoginViewController.swift */,
 				C2FB7305299A9E00000FA350 /* WelcomeViewController.swift */,
+				C274889F299FD0DE00187D82 /* HobbyViewController.swift */,
+				C274889D299FD09C00187D82 /* InfoViewController.swift */,
+				C2EF581F299ECB02003CC820 /* Introduce.swift */,
 				C2C4E50E299A4AD9007A1121 /* Main.storyboard */,
 				C2C4E513299A4ADC007A1121 /* LaunchScreen.storyboard */,
 				C2C4E511299A4ADC007A1121 /* Assets.xcassets */,
-				C2EF581F299ECB02003CC820 /* Introduce.swift */,
 				C2C4E516299A4ADC007A1121 /* Info.plist */,
 			);
 			path = Login;
@@ -146,9 +152,11 @@
 			files = (
 				C2C4E50D299A4AD9007A1121 /* LoginViewController.swift in Sources */,
 				C2EF5820299ECB02003CC820 /* Introduce.swift in Sources */,
+				C27488A0299FD0DE00187D82 /* HobbyViewController.swift in Sources */,
 				C2C4E509299A4AD9007A1121 /* AppDelegate.swift in Sources */,
 				C2C4E50B299A4AD9007A1121 /* SceneDelegate.swift in Sources */,
 				C2FB7306299A9E00000FA350 /* WelcomeViewController.swift in Sources */,
+				C274889E299FD09C00187D82 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
