@@ -12,18 +12,33 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userNameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     
-    private let userName = User()
-    private let password = User()
+    private let userName = user.login
+    private let password = user.password
     
     override func viewDidLoad() {
-        userNameField.text = userName.login
-        passwordField.text = password.password
+        userNameField.text = user.login
+        passwordField.text = user.password
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userNameField.text ?? ""
-    }
+        guard let tabBarVC = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        viewControllers.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userName = user.person.name + " " + user.person.surname
+            } else if let infoVC = viewController as? InfoViewController {
+                infoVC.surname = user.person.name + " " + user.person.surname
+                infoVC.occupation = user.person.position
+                infoVC.age = user.person.age
+                infoVC.homeTown = user.person.homeTown
+                infoVC.country = user.person.country
+            } else if let hobbyVC = viewController as? HobbyViewController {
+                hobbyVC.view.backgroundColor = UIColor.systemBrown
+                hobbyVC.hobby = user.person.hobby.sport
+            }
+        }
+        }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -33,7 +48,7 @@ final class LoginViewController: UIViewController {
 //    MARK: - Setting login button
     
     @IBAction func logInButtonTapped() {
-        guard userNameField.text == userName.login && passwordField.text == password.password else {
+        guard userNameField.text == user.login && passwordField.text == user.password else {
         showAlertWindow(
             withTitle: "Invalid login or password",
             andMessage: "Please, enter correct login and password"

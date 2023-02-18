@@ -17,10 +17,6 @@ final class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         userNameLabel.text = "Hello, \(userName)!"
         view.setBackgroundColor()
-//        let gradientBackground = CAGradientLayer()
-//        gradientBackground.frame = view.bounds
-//        gradientBackground.colors = [UIColor.systemPink.cgColor, UIColor.systemBlue.cgColor]
-//        view.layer.insertSublayer(gradientBackground, at: 0)
     }
 }
 
